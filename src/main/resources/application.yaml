@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: api-gateway
+
+  config:
+#    fail-fast
+    import: "optional:configserver:http://localhost:9000"
+
+  cloud:
+    config:
+      uri: http://config.platform:9000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
