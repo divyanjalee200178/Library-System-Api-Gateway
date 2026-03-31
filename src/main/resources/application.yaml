@@ -2,11 +2,10 @@ spring:
   application:
     name: api-gateway
 
-  config:
-#    fail-fast
-    import: "configserver:"
-
   cloud:
     config:
-      uri: http://config.platform:9000
+      import: "configserver:"
+      uri: http://<VM_IP>:9000  # <-- same as above
 
+server:
+  port: 9002
