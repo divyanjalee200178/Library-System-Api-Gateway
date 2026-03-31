@@ -18,7 +18,7 @@
     <artifactId>api-gateway</artifactId>
     <version>1.0.0</version>
     <name>api-gateway</name>
-    <description>API Gateway Service</description>
+<!--    <description>API Gateway Service</description>-->
 
     <!-- Properties -->
     <properties>
@@ -62,11 +62,7 @@
         </dependency>
 
         <!-- Test -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+
 
     </dependencies>
 
